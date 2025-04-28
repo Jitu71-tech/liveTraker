@@ -8,8 +8,7 @@ const io =socket(Server);
 
 
 app.set("view engine", "ejs");
-app.use(express.static( path.join(__dirname, "/public/css")));
-app.use(express.static( path.join(__dirname, "/public/js")));
+app.use(express.static( path.join(__dirname, "/public")));
 
 app.set("views", path.join(__dirname, "views"));
 
